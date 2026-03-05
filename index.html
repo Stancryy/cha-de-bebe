@@ -1046,7 +1046,7 @@
             <!-- EDITAR: Nome da mamãe -->
             <h1>Chá de Bebê da Juliana</h1>
             <p class="subtitle">Um novo craque está chegando! ⚽👶</p>
-            <a href="#rsvp" class="btn-primary" aria-label="Confirmar presença no chá de bebê">Confirmar Presença 💖</a>
+            <a href="#countdown" class="btn-primary" aria-label="Role para baixo">Role para Baixo 💖</a>
         </div>
     </header>
 
@@ -1117,52 +1117,9 @@
         </div>
     </section>
 
-    <!-- ==================== DRESS CODE ==================== -->
-    <section id="dresscode" aria-label="Dress code do evento">
-        <div class="reveal">
-            <h2 class="section-title">Dress Code 👗</h2>
-            <p class="section-subtitle">Vista Rosa e Dourado 💖✨</p>
-            <p style="max-width:500px;margin:0 auto;color:#666;line-height:1.8">Venha no clima do nosso time campeão!
-                Use as cores abaixo para arrasar no evento.</p>
-            <div class="swatches">
-                <div>
-                    <div class="swatch" style="background:#E91E7B" title="Rosa"></div>
-                    <p class="swatch-label">Rosa</p>
-                </div>
-                <div>
-                    <div class="swatch" style="background:#FFB6D9" title="Rosa Claro"></div>
-                    <p class="swatch-label">Rosa Claro</p>
-                </div>
-                <div>
-                    <div class="swatch" style="background:#D4A017" title="Dourado"></div>
-                    <p class="swatch-label">Dourado</p>
-                </div>
-                <div>
-                    <div class="swatch" style="background:#FFD700" title="Dourado Claro"></div>
-                    <p class="swatch-label">Ouro</p>
-                </div>
-                <div>
-                    <div class="swatch" style="background:#FFFFFF;border:2px solid #ddd" title="Branco"></div>
-                    <p class="swatch-label">Branco</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ==================== GALERIA ==================== -->
-    <section id="gallery" aria-label="Galeria de inspiração">
-        <div class="reveal">
-            <h2 class="section-title">Inspiração 📸</h2>
-            <p class="section-subtitle">O clima da nossa festa!</p>
-            <div class="gallery-grid" id="galleryGrid"></div>
-        </div>
-    </section>
 
-    <!-- LIGHTBOX MODAL -->
-    <div class="modal-overlay" id="lightbox" role="dialog" aria-label="Visualizar imagem">
-        <button class="modal-close" aria-label="Fechar">&times;</button>
-        <div class="modal-content" id="lightboxContent"></div>
-    </div>
+
 
     <!-- ==================== LISTA DE PRESENTES ==================== -->
     <section id="gifts" aria-label="Lista de presentes">
@@ -1228,92 +1185,15 @@
         </div>
     </section>
 
-    <!-- ==================== RSVP ==================== -->
-    <section id="rsvp" aria-label="Confirmação de presença">
-        <div class="reveal">
-            <h2 class="section-title">Confirme sua Presença ⚽</h2>
-            <p class="section-subtitle">Marque seu lugar nesse jogo especial!</p>
-            <!--
-  NOTA PARA INTEGRAÇÃO REAL:
-  Para envio real de formulários no GitHub Pages (site estático), use:
-  - FormSubmit: adicione action="https://formsubmit.co/SEU_EMAIL" method="POST"
-  - Formspree: adicione action="https://formspree.io/f/SEU_ID" method="POST"
-  - Google Forms: redirecione para URL do Google Forms
-  Atualmente, o formulário simula o envio com um popup de sucesso.
--->
-            <form class="rsvp-form" id="rsvpForm" novalidate>
-                <div class="form-group"><label for="rsvp-name">Nome Completo *</label><input type="text" id="rsvp-name"
-                        placeholder="Seu nome completo" required><span class="form-error" id="err-name">Por favor,
-                        insira seu nome.</span></div>
-                <div class="form-group"><label for="rsvp-phone">Telefone *</label><input type="tel" id="rsvp-phone"
-                        placeholder="(00) 00000-0000" required><span class="form-error" id="err-phone">Por favor, insira
-                        seu telefone.</span></div>
-                <div class="form-group"><label for="rsvp-guests">Acompanhantes</label><select id="rsvp-guests">
-                        <option value="0">Nenhum</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select></div>
-                <div class="form-group"><label for="rsvp-msg">Mensagem para a Mamãe 💌</label><textarea id="rsvp-msg"
-                        placeholder="Deixe uma mensagem carinhosa..." rows="4"></textarea></div>
-                <button type="submit" class="btn-primary" style="width:100%"
-                    aria-label="Enviar confirmação de presença">Confirmar Presença ⚽</button>
-            </form>
-        </div>
-    </section>
 
-    <!-- MODAL DE CONFIRMAÇÃO -->
-    <div id="confirmModal" role="dialog" aria-label="Presença confirmada">
-        <div class="modal-box">
-            <h3>Presença Confirmada! 🎉⚽</h3>
-            <p>Nos vemos no grande jogo!<br>A mamãe Juliana agradece de coração! 💖</p>
-            <button class="btn-secondary" onclick="document.getElementById('confirmModal').classList.remove('show')"
-                aria-label="Fechar modal">Fechar ✨</button>
-        </div>
-    </div>
 
-    <!-- ==================== MURAL DE RECADOS ==================== -->
-    <section id="messages" aria-label="Mural de recados">
-        <div class="reveal">
-            <h2 class="section-title">Mural de Carinho 💌</h2>
-            <p class="section-subtitle">Mensagens especiais para a mamãe e a bebê!</p>
-            <div class="messages-grid">
-                <div class="message-card">
-                    <div class="quote">"</div>
-                    <p>Que a Helena venha com saúde e muita alegria! Mal posso esperar para enchê-la de amor. 💖</p>
-                    <p class="author">— Tia Ana</p>
-                </div>
-                <div class="message-card">
-                    <div class="quote">"</div>
-                    <p>Uma nova craque chegando para completar o time mais lindo! Deus abençoe essa família! ⚽🙏</p>
-                    <p class="author">— Vovó Maria</p>
-                </div>
-                <div class="message-card">
-                    <div class="quote">"</div>
-                    <p>Juliana, você vai ser a melhor mãe do mundo! Helena é muito abençoada. 👑✨</p>
-                    <p class="author">— Amiga Carla</p>
-                </div>
-                <div class="message-card">
-                    <div class="quote">"</div>
-                    <p>Contando os dias para conhecer essa princesinha goleadora! Que venha com muita saúde! 🏆💕</p>
-                    <p class="author">— Padrinho Lucas</p>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- ==================== FOOTER ==================== -->
     <footer>
         <!-- EDITAR: Nome da mamãe -->
         <p>Feito com 💖 para o Chá de Bebê da Juliana - 2026</p>
-        <div class="social-icons">
-            <!-- EDITAR: Links das redes sociais -->
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        </div>
+
         <a href="#hero" class="btn-top" aria-label="Voltar ao topo">⬆ Voltar ao Topo</a>
     </footer>
 
